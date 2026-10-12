@@ -24,8 +24,8 @@ p:
   }
 proxy-providers:
   Subscribe:
-      url: http://127.0.0.1:38324/download/ikuuu?target=ClashMeta
-      <<: *p
+    url: http://127.0.0.1:38324/download/ikuuu?target=ClashMeta
+    <<: *p
     #override: # 修改节点前后缀时，需移除前方的 "#" 符号
     #additional-prefix: "节点前缀"
     #additional-suffix: "节点后缀"
@@ -155,6 +155,11 @@ proxy-groups:
       icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png,
     }
   - {
+      name: Github,
+      <<: *pg,
+      icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/GitHub.png,
+    }
+  - {
       name: Google,
       <<: *pg,
       icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png,
@@ -242,12 +247,12 @@ rule-providers:
   Microsoft:
     {
       <<: *c,
-      url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Microsoft.list,
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Microsoft/Microsoft.list,
     }
   Github:
     {
       <<: *c,
-      url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Github.list,
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list,
     }
   Google:
     {
@@ -292,7 +297,7 @@ rules:
   - RULE-SET,Steam,Game
   - RULE-SET,Epic,Game
   - RULE-SET,Google,Google
-  - RULE-SET,Github,Microsoft
+  - RULE-SET,Github,Github
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Proxy,Global
