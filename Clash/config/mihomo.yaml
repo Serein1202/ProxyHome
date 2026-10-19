@@ -170,6 +170,11 @@ proxy-groups:
       icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png,
     }
   - {
+      name: Wechat,
+      <<: *pg,
+      icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png,
+    }
+  - {
       name: X,
       <<: *pg,
       icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png,
@@ -274,8 +279,11 @@ rule-providers:
   Epic:
     { <<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Epic.list }
   AI: { <<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AI.list }
-  Emby:
-    { <<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Emby.list }
+  Wechat:
+    {
+      <<: *c,
+      url:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/WeChat/WeChat.list,
+    }
   Spotify:
     {
       <<: *c,
@@ -294,6 +302,7 @@ rules:
   - RULE-SET,AI,AI
   - RULE-SET,Telegram,Telegram
   - RULE-SET,X,X
+  - RULE-SET,Wechat,Wechat
   - RULE-SET,Steam,Game
   - RULE-SET,Epic,Game
   - RULE-SET,Google,Google
