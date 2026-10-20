@@ -25,31 +25,55 @@ let obj = JSON.parse(body);
 //         ]
 //     }
 // ];
-obj.data = {
-    "isEmergencyModel": 0,
-    "androidLogSwitch": 0,
-    "iosLogSwitch": 1,
-    "androidTaroSwitch": 1,
-    "iosTaroSwitch": 1,
-    "chargingOrderKwSwitch": 1,
-    "plugVinSwitch": 1,
-    "privateStubNewVersionSwitch": 1,
-    "operateCategoryIconSwitch": 1,
-    "operateCategoryIconUrl": "https://app-taro.starcharge.com/pages/introductionPage/index?title=电站运营类型&images=operationType-1,operationType-2",
-    "aiChatSwitch": 0,
-    "chargeCodeAdSwitch": 0,
-    "chargeCodeAdSecond": 0,
-    "connectingAdSwitch": 0,
-    "optionMemberShow": 1,
-    "eightTwoEgihtlabSwitch": 0,
-    "pendingPaymentMemberShow": 0,
-    "memberPageSurplusdayShow": 0,
-    "memberBuySurplusdayShow": 0,
-    "batteryReportOriginPrice": "9.9",
-    "batteryReportSalePrice": "1",
-    "appAdvertisementSort": -1,
-    "homeEntrances": "[{\"name\":\"券包\",\"refType\":0,\"refUrl\":\"40\",\"isUser\":1,\"icon\":\"https://activity-h5.starcharge.com/wechat/wechatImgs/index/entrances-coupon.png\"},{\"name\":\"抽奖\",\"refType\":1,\"refUrl\":\"https://osmp-h5.starcharge.com/#/pages/luckyDraw/index?activityId=f9642caf-391e-472d-a875-372343152257\",\"isUser\":1,\"icon\":\"https://activity-h5.starcharge.com/wechat/wechatImgs/index/entrances-lottery.png\"},{\"name\":\"会员\",\"refType\":\"1\",\"refUrl\":\"https://app-taro.starcharge.com/pages/member/purchase/index\",\"isUser\":1,\"icon\":\"https://activity-h5.starcharge.com/wechat/wechatImgs/index/entrances-vip.png\"},{\"name\":\"电池\",\"refType\":1,\"refUrl\":\"https://app-taro.starcharge.com/pages/sohInsurance/index/index\",\"isUser\":1,\"icon\":\"https://activity-h5.starcharge.com/wechat/wechatImgs/index/entrances-soh.png\"},{\"name\":\"家充\",\"refType\":0,\"refUrl\":\"38\",\"isUser\":1,\"icon\":\"https://activity-h5.starcharge.com/wechat/wechatImgs/index/entrances-pile.png\"}]",
-    "oldPaymentOptions": 0
-}
+obj.data = [
+    {
+      "id": "7a287577e47349dc90a0f36bb745c8f7",
+      "name": "券包",
+      "title": "券包",
+      "icon": "https://app-cdn.starcharge.com/webDir/375dd744-88dc-9990-2fd7-a549237d1903.png",
+      "img": "https://app-cdn.starcharge.com/webDir/375dd744-88dc-9990-2fd7-a549237d1903.png",
+      "isUser": 1,
+      "isFullScreen": 0,
+      "refType": 0,
+      "refUrl": "/pagesSub/coupon/index",
+      "sort": 2
+    },
+    {
+      "id": "0701c13867e249369c1eacdc7652cac0",
+      "name": "会员",
+      "title": "会员",
+      "icon": "https://app-cdn.starcharge.com/webDir/72b6c940-6ba3-4e85-f02a-010d93082524.png",
+      "img": "https://app-cdn.starcharge.com/webDir/72b6c940-6ba3-4e85-f02a-010d93082524.png",
+      "isUser": 1,
+      "isFullScreen": 0,
+      "refType": 0,
+      "refUrl": "/pages/vip5/index",
+      "sort": 3
+    },
+    {
+      "id": "3ae08184852042b887856445a3025b82",
+      "name": "电池",
+      "title": "电池",
+      "icon": "https://app-cdn.starcharge.com/webDir/b3b2501e-4f0b-1c36-3013-b35a3df6fc1b.png",
+      "img": "https://app-cdn.starcharge.com/webDir/b3b2501e-4f0b-1c36-3013-b35a3df6fc1b.png",
+      "isUser": 1,
+      "isFullScreen": 0,
+      "refType": 1,
+      "refUrl": "https://app-taro.starcharge.com/pages/sohInsurance/index/index",
+      "sort": 4
+    },
+    {
+      "id": "f7d67c9a6b76472aa4a6ae1ca8722acd",
+      "name": "认证",
+      "title": "认证",
+      "icon": "https://app-cdn.starcharge.com/webDir/0235fd27-595b-af64-7ed3-5b97f573e104.png",
+      "img": "https://app-cdn.starcharge.com/webDir/0235fd27-595b-af64-7ed3-5b97f573e104.png",
+      "isUser": 1,
+      "isFullScreen": 0,
+      "refType": 0,
+      "refUrl": "/pagesSub/myCars/index/index",
+      "sort": 5
+    }
+  ]
 body = JSON.stringify(obj);
 $done({ body });

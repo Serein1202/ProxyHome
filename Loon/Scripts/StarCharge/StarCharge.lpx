@@ -12,6 +12,7 @@
 DOMAIN-SUFFIX,jiguang.cn,REJECT
 DOMAIN-SUFFIX,jpush.cn,REJECT
 DOMAIN-SUFFIX,yidianlingyi.cn,REJECT
+
 [Rewrite]
 # 去广告
 ^https?:\/\/gateway\.starcharge\.com\/apph5\/xcxApiV2\/wechat\/advertisement reject
@@ -21,7 +22,8 @@ DOMAIN-SUFFIX,yidianlingyi.cn,REJECT
 
 [Script]
 http-response ^https?:\/\/gateway\.sccncdn\.com\/apph5\/xcxApiV2\/wechat\/menu\/v2\? script-path=https://raw.githubusercontent.com/Serein1202/ProxyHome/refs/heads/main/Loon/Scripts/StarCharge/StarChargeMine.js, requires-body=true, timeout=60, tag=我的页面优化
-http-response ^https?:\/\/gateway\.sccncdn\.com\/apph5\/xcxApiV2\/wechat\/system\/info\? script-path=https://raw.githubusercontent.com/Serein1202/ProxyHome/refs/heads/main/Loon/Scripts/StarCharge/StarChargeIndex.js, requires-body=true, timeout=60, tag=主页优化
+http-response ^https?:\/\/gateway\.sccncdn\.com\/apph5\/xcxApiV2\/wechat\/menu\/icon\/info script-path=https://raw.githubusercontent.com/Serein1202/ProxyHome/refs/heads/main/Loon/Scripts/StarCharge/StarChargeIndex.js, requires-body=true, timeout=60, tag=主页优化
+
 [MITM]
 hostname = gateway.starcharge.com,gateway.sccncdn.com,jiguang.cn,osmp.starcharge.com,yidianlingyi.cn
 
