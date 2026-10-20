@@ -9,18 +9,20 @@
 #!date=2026-10-20 17:30:46
 
 [Rule]
-DOMAIN,jiguang.cn,REJECT
-DOMAIN,jpush.cn,REJECT
+DOMAIN-SUFFIX,jiguang.cn,REJECT
+DOMAIN-SUFFIX,jpush.cn,REJECT
+DOMAIN-SUFFIX,yidianlingyi.cn,REJECT
 [Rewrite]
 # 去广告
 ^https?:\/\/gateway\.starcharge\.com\/apph5\/xcxApiV2\/wechat\/advertisement reject
 ^https?:\/\/gateway\.sccncdn\.com\/app\/apiV2\/memberLevel\/stubGroup\/memberAd reject
 ^https?:\/\/osmp\.starcharge\.com\/webDir reject
+^https?:\/\/api\.yidianlingyi\.cn\/\/adpp\/api\/universalAdQuery\? reject
 
 [Script]
 http-response ^https?:\/\/gateway\.sccncdn\.com\/apph5\/xcxApiV2\/wechat\/menu\/v2\? script-path=https://raw.githubusercontent.com/Serein1202/ProxyHome/refs/heads/main/Loon/Scripts/StarCharge/StarChargeMine.js, requires-body=true, timeout=60, tag=我的页面优化
 http-response ^https?:\/\/gateway\.sccncdn\.com\/apph5\/xcxApiV2\/wechat\/system\/info\? script-path=https://raw.githubusercontent.com/Serein1202/ProxyHome/refs/heads/main/Loon/Scripts/StarCharge/StarChargeIndex.js, requires-body=true, timeout=60, tag=主页优化
 [MITM]
-hostname = gateway.starcharge.com,gateway.sccncdn.com,jiguang.cn,osmp.starcharge.com
+hostname = gateway.starcharge.com,gateway.sccncdn.com,jiguang.cn,osmp.starcharge.com,yidianlingyi.cn
 
 
