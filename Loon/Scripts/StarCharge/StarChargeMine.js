@@ -5,101 +5,123 @@ let url = $request.url;
 let body = $response.body;
 let obj = JSON.parse(body);
 obj.data = [
-	{
-		"title": "充电服务",
-		"sort": 0,
-		"itemList": [
+    {
+      "title": null,
+      "sort": 10,
+      "itemList": [
         {
-          "id": "b4202b3e-e211-45b8-968e-ba3de0d58bf9",
-          "refUrl": "16",
+          "id": "1d2a2779-7369-47ab-bcce-2d8112b6cd08",
+          "refUrl": "/pagesSub/myOrderList/index",
           "refType": 0,
           "title": "我的订单",
-          "isUser": 1,
-          "picUrl": "https://app-cdn.starcharge.com/webDir/32b71e45-36d3-7565-dc1b-657d3f50022b.png",
-          "startVersion": "8.2.0",
+          "isUser": 0,
+          "picUrl": "https://app-cdn.starcharge.com/webDir/495d2942-64ce-f620-adc2-220752a27fc2.png",
+          "startVersion": "",
           "endVersion": "",
-          "rule": "{\"startVersion\":\"8.2.0\",\"endVersion\":\"\"}",
+          "rule": "{\"startVersion\":\"\",\"endVersion\":\"\"}",
           "appId": null,
           "path": null,
-          "isFullScreen": 0
+          "isFullScreen": 0,
+          "displayChannel": "1,2"
         },
         {
-          "id": "49611675-70d0-459d-b31f-2a8fe9e2c795",
-          "refUrl": "https://app-cdn.starcharge.com/wap/index.html#/balance",
+          "id": "1e52a7a2-b130-41ff-9d9d-787320a10bae",
+          "refUrl": "/pagesSub/invoice/applyEntrance",
+          "refType": 0,
+          "title": "开具发票",
+          "isUser": 0,
+          "picUrl": "https://app-cdn.starcharge.com/webDir/a2daf29f-7fc1-409a-2a55-f98afa96a5e3.png",
+          "startVersion": "",
+          "endVersion": "",
+          "rule": "{\"startVersion\":\"\",\"endVersion\":\"\"}",
+          "appId": null,
+          "path": null,
+          "isFullScreen": 0,
+          "displayChannel": "1,2"
+        },
+        {
+          "id": "2d0c1057-4d72-4ab5-93a8-3470b0a9a29d",
+          "refUrl": "/pagesSub/kefu/center?query={\"pageType\":\"mine\"}",
+          "refType": 0,
+          "title": "客服中心",
+          "isUser": 0,
+          "picUrl": "https://app-cdn.starcharge.com/webDir/1ee4ac8d-757b-db45-f1c9-4d05ac752418.png",
+          "startVersion": "",
+          "endVersion": "",
+          "rule": "{\"startVersion\":\"\",\"endVersion\":\"\"}",
+          "appId": null,
+          "path": null,
+          "isFullScreen": 0,
+          "displayChannel": "1,2"
+        },
+        {
+          "id": "65e12f84-6dc9-46fe-8dee-8947ce6d03fb",
+          "refUrl": "https://app-taro.starcharge.com/pages/sohInsurance/index/index",
           "refType": 1,
-          "title": "充值提现",
+          "title": "星电守护",
           "isUser": 1,
-          "picUrl": "https://app-cdn.starcharge.com/webDir/40cc6fad-ef84-b39e-d652-f6d721b2a7cd.png",
-          "startVersion": "7.6.0",
+          "picUrl": "https://app-cdn.starcharge.com/webDir/d09b4ff0-dac2-c5a4-7ffa-4d5b217073ed.png",
+          "startVersion": "",
           "endVersion": "",
-          "rule": "{\"startVersion\":\"7.6.0\",\"endVersion\":\"\"}",
+          "rule": "{\"startVersion\":\"\",\"endVersion\":\"\"}",
           "appId": null,
           "path": null,
-          "isFullScreen": 0
-        },
+          "isFullScreen": 0,
+          "displayChannel": "1,2"
+        }
+      ]
+    },
+    {
+      "title": null,
+      "sort": 11,
+      "itemList": [
         {
-          "id": "8767eba2-cd74-4861-8de3-a5f3ef55222b",
-          "refUrl": "https://app-cdn.starcharge.com/wap/index.html#/invoiceEntry",
+          "id": "2dd5f955-a9d4-41c9-bde2-c3dab85e6691",
+          "refUrl": "https://app-taro.starcharge.com/pages/introductionPage/drawTheGun/index",
           "refType": 1,
-          "title": "开票",
-          "isUser": 1,
-          "picUrl": "https://app-cdn.starcharge.com/webDir/5d449db8-3b4e-f192-441c-52aef60e2003.png",
-          "startVersion": "7.6.0",
+          "title": "无法拔枪",
+          "isUser": 0,
+          "picUrl": "https://app-cdn.starcharge.com/webDir/07e95eb9-744a-0647-c0ab-4f6dd81fff60.png",
+          "startVersion": "",
           "endVersion": "",
-          "rule": "{\"startVersion\":\"7.6.0\",\"endVersion\":\"\"}",
+          "rule": "{\"startVersion\":\"\",\"endVersion\":\"\"}",
           "appId": null,
           "path": null,
-          "isFullScreen": 0
+          "isFullScreen": 0,
+          "displayChannel": "1,2"
         },
         {
-          "id": "d3ca60a9-4c59-40ec-852f-f295c6033ec7",
-          "refUrl": "4",
+          "id": "b2ff7a4b-6303-4f7f-a283-8c71e5a2c93b",
+          "refUrl": "/pagesSub/myFavorite/index?from=my",
           "refType": 0,
           "title": "收藏电站",
           "isUser": 1,
-          "picUrl": "https://app-cdn.starcharge.com/webDir/7fdb360d-3d81-61d4-3d4b-2d83e63d2c62.png",
-          "startVersion": "7.17.0",
+          "picUrl": "https://app-cdn.starcharge.com/webDir/ead945f1-74cf-d175-ebc4-f7267e1ed83e.png",
+          "startVersion": "",
           "endVersion": "",
-          "rule": "{\"startVersion\":\"7.17.0\",\"endVersion\":\"\"}",
+          "rule": "{\"startVersion\":\"\",\"endVersion\":\"\"}",
           "appId": null,
           "path": null,
-          "isFullScreen": 0
+          "isFullScreen": 0,
+          "displayChannel": "1,2"
+        },
+        {
+          "id": "74f35831-b84e-4bab-aaf1-be47b19f7542",
+          "refUrl": "/pagesSub/myCars/index/quickCharge",
+          "refType": 0,
+          "title": "即插即充",
+          "isUser": 1,
+          "picUrl": "https://app-cdn.starcharge.com/webDir/694605ac-dadc-8b69-21e5-c46593f8bb01.png",
+          "startVersion": "",
+          "endVersion": "",
+          "rule": "{\"startVersion\":\"\",\"endVersion\":\"\"}",
+          "appId": null,
+          "path": null,
+          "isFullScreen": 0,
+          "displayChannel": "1,2"
         }
       ]
-	},
-	{
-		"title": "更多服务",
-		"sort": 4,
-		"itemList": [
-			{
-				"id": "0b58c583-a71b-4df8-8fb6-4c1a7c84cad6",
-				"refUrl": "https://app-cdn.starcharge.com/wap/index.html#/allMessageList",
-				"refType": 1,
-				"title": "我的消息",
-				"isUser": 1,
-				"picUrl": "https://app-cdn.starcharge.com/webDir/5321abca-328c-a51e-c92f-e6f455033c66.png",
-				"startVersion": "8.2.0",
-				"endVersion": "",
-				"rule": "{\"startVersion\":\"8.2.0\",\"endVersion\":\"\"}",
-				"appId": null,
-				"path": null,
-				"isFullScreen": 0
-			},
-			{
-				"id": "4d5038e9-26cb-4a2a-ac0e-5196958089ea",
-				"refUrl": "https://customer-center-h5-web.starcharge.com/#/customerCenter/index",
-				"refType": 1,
-				"title": "客服中心",
-				"isUser": 1,
-				"picUrl": "https://app-cdn.starcharge.com/webDir/1e12e6a5-949d-31aa-cda0-916726e96633.png",
-				"startVersion": "8.2.0",
-				"endVersion": "",
-				"rule": "{\"startVersion\":\"8.2.0\",\"endVersion\":\"\"}",
-				"appId": null,
-				"path": null,
-				"isFullScreen": 1
-			}
-		]
-	}];
+    }
+  ];
 body = JSON.stringify(obj);
 $done({ body });
