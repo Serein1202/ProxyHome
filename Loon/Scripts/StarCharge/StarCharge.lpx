@@ -1,4 +1,4 @@
-#!name=StarCharge去广告
+#!name=StarCharge小程序去广告
 #!desc=针对StarCharge小程序广告进行拦截
 #!author=Serein1202[https://github.com/Serein1202]
 #!icon=https://raw.githubusercontent.com/Serein1202/ProxyHome/refs/heads/main/Loon/Scripts/StarCharge/StarCharge.png
@@ -6,7 +6,7 @@
 #!raw-url=https://github.com/Serein1202/ProxyHome/blob/main/Loon/Scripts/StarCharge/StarCharge.lpx
 #!tag=去广告, Serein1202
 #!system=iOS, iPadOS
-#!date=2026-10-20 17:30:46
+#!date=2026-10-20 16:54:47
 
 [Rule]
 DOMAIN-SUFFIX,jiguang.cn,REJECT
