@@ -305,12 +305,12 @@ https://raw.githubusercontent.com/NobyDa/Script/master/Loon/Loon_Daily_bonus.plu
 
 [Script]
 cron "0 9 * * *" then script("https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js") with tag="歪麦每日签到", timeout=60
-request if ${url} ~= /^https:\/\/wmapp-api\.waimaimingtang\.com\/api\/api\/v2\/user\/api_user_info_one/i then script("https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js") with enabled=false, tag="歪麦token获取", timeout=60, requires_body=true
+# request if ${url} ~= /^https:\/\/wmapp-api\.waimaimingtang\.com\/api\/api\/v2\/user\/api_user_info_one/i then script("https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js") with enabled=false, tag="歪麦token获取", timeout=60, requires_body=true
 cron "0 18 * * *" then script("https://raw.githubusercontent.com/Serein1202/ProxyHome/refs/heads/main/Loon/Scripts/Oil/Oil.js") with tag="今日油价", timeout=60
-request if ${url} ~= /^https?:\/\/(c\.tieba|tiebac)\.baidu\.com\/c\/s\/login/i then script("https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js") with tag="贴吧获取cookies", timeout=60
+# request if ${url} ~= /^https?:\/\/(c\.tieba|tiebac)\.baidu\.com\/c\/s\/login/i then script("https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js") with tag="贴吧获取cookies", timeout=60
 cron "40 8 * * *" then script("https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js") with tag="贴吧签到", timeout=60
 cron "1 0 * * *" then script("https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js") with tag="高德签到", timeout=10
-response if ${url} ~= /^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=)/i then script("https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js") with enabled=false, tag="高德", timeout=10, requires_body=true, binary_body_mode=true
+# response if ${url} ~= /^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=)/i then script("https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js") with enabled=false, tag="高德", timeout=10, requires_body=true, binary_body_mode=true
 cron "0 11 * * *" then script("https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js") with tag="60s读世界", timeout=10
 generic then script("https://raw.githubusercontent.com/Loon0x00/LoonScript/main/MediaCheck/check.js") with tag="流媒体-解锁查询", img_url="https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png"
 cron "5 0 * * *" then script("https://raw.githubusercontent.com/toulanboy/scripts/master/weibo/weibotalk.js") with tag="微博超话", timeout=600
