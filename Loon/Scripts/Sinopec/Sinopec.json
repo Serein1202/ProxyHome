@@ -5724,16 +5724,6 @@
               "key": "cykyy"
             },
             {
-              "name": "beidou",
-              "caption": "�����޸м���",
-              "img": "beidou3.png",
-              "img_new": "beidou4.png",
-              "funType": "h5App",
-              "url": "https://ahbdjy.ahsy.sinopec.com:1180",
-              "showType": "newWindow",
-              "login": true
-            },
-            {
               "key": "yqwc"
             },
             {
