@@ -289,7 +289,7 @@ rule-providers:
   Wechat:
     {
       <<: *c,
-      url:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/WeChat/WeChat.list,
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/WeChat/WeChat.list,
     }
   Spotify:
     {
