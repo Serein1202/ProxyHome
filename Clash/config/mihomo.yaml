@@ -299,6 +299,7 @@ rules:
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Reject,REJECT
+  - DOMAIN-SUFFIX,gh-proxy.com,Manual
   - DOMAIN-SUFFIX,quark.cn,Manual
   - DOMAIN-SUFFIX,quark.com,Manual
   - DOMAIN-SUFFIX,muse.ai,United States
