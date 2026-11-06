@@ -24,11 +24,15 @@ p:
   }
 proxy-providers:
   ikuuu:
+    {
     url: http://127.0.0.1:38324/download/ikuuu?target=ClashMeta
     <<: *p
+    }
   LiangXinCloud:
+    {
     url: http://127.0.0.1:38324/download/LiangXinCloud?target=ClashMeta
     <<: *p
+    }
     #override: # 修改节点前后缀时，需移除前方的 "#" 符号
     #additional-prefix: "节点前缀"
     #additional-suffix: "节点后缀"
