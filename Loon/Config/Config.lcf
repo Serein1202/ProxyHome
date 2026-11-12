@@ -162,7 +162,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master
 # Wechat规则
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list, policy=Wechat, tag=Wechat规则, enabled=true
 # AI规则
-https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=AI, tag=AI规则, enabled=true
+https://ddgksf2013.top/filter/Ai.yaml, policy=AI, tag=AI规则, enabled=true
 # Copilot规则
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Copilot/Copilot.list, policy=US, tag=Copilot规则, enabled=true
 # GitHub规则
